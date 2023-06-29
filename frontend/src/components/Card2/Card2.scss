@@ -1,0 +1,98 @@
+.card {
+  min-width: 150px;
+  max-width: 100%;
+  width: 250px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 10px;
+  gap: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.card__counter {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 15px;
+  padding: 5px;
+  border-radius: 50px;
+}
+
+.card__counter-score,
+.card__btn {
+  font-weight: 600;
+  font-size: 22px;
+  color: var(--main-color);
+}
+
+.card__btn {
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+  border: none;
+  background: transparent;
+}
+
+.card__btn-plus {
+  background: var(--bg-color);
+}
+
+/* Responsive widths */
+@media (max-width: 767px) {
+  .card {
+    width: 70%;
+  }
+}
+.book-image {
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.author {
+  font-size: 14px;
+  color: #888;
+  margin-bottom: 5px;
+}
+
+.description {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.price {
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.card-buttons {
+  border-top: 1px solid #333;
+  display: flex;
+  justify-content: space-between;
+}
+
+.card-buttons button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  color: #888;
+  padding: 5px;
+  transition: color 0.3s;
+}
+
+.card-buttons button:hover {
+  color: #333;
+}

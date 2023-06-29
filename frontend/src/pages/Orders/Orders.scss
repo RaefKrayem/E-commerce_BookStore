@@ -1,0 +1,163 @@
+$h1-font-size: 30px;
+$h1-color: #353535;
+$h1-text-transform: uppercase;
+$h1-font-weight: 300;
+$h1-text-align: center;
+$h1-margin-bottom: 15px;
+
+$table-width: 100%;
+$table-layout: fixed;
+
+$tbl-header-background-color: rgb(231, 190, 53);
+
+$tbl-content-height: 450px;
+$tbl-content-overflow: auto;
+$tbl-content-margin-top: 0px;
+$tbl-content-border: 1px solid rgb(231, 190, 53);
+
+$th-padding: 20px 15px;
+$th-text-align: center;
+$th-font-weight: 500;
+$th-font-size: 16px;
+$th-color: #353535;
+$th-text-transform: uppercase;
+
+$td-padding: 15px;
+$td-text-align: center;
+$td-vertical-align: middle;
+$td-font-weight: 300;
+$td-font-size: 13px;
+$td-color: #353535;
+$td-border-bottom: solid 1px rgba(255, 255, 255, 0.1);
+
+section {
+  margin: 20px 50px;
+}
+
+h1 {
+  font-size: $h1-font-size;
+  color: $h1-color;
+  text-transform: $h1-text-transform;
+  font-weight: $h1-font-weight;
+  text-align: $h1-text-align;
+  margin-bottom: $h1-margin-bottom;
+}
+
+table {
+  width: $table-width;
+  table-layout: $table-layout;
+}
+
+.tbl-header {
+  background-color: $tbl-header-background-color;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.tbl-content {
+  height: $tbl-content-height;
+  overflow-x: $tbl-content-overflow;
+  margin-top: $tbl-content-margin-top;
+  border: $tbl-content-border;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  background-color: #fff;
+}
+
+.case {
+  text-align: center;
+  font-size: 15px;
+  padding: 5px 10px;
+
+  text-transform: uppercase;
+  font-weight: 700;
+  border-radius: 10px;
+}
+
+.pending {
+  color: #363636;
+  background-color: rgba(136, 133, 133, 0.164);
+}
+
+.success {
+  color: #065219;
+  background-color: rgba(40, 182, 11, 0.164);
+}
+
+.canceled {
+  color: rgb(255, 156, 74);
+  background-color: rgba(240, 155, 86, 0.322);
+}
+
+th {
+  padding: $th-padding;
+  text-align: $th-text-align;
+  font-weight: $th-font-weight;
+  font-size: $th-font-size;
+  color: $th-color;
+  text-transform: $th-text-transform;
+}
+
+td {
+  padding: $td-padding;
+  text-align: $td-text-align;
+  vertical-align: $td-vertical-align;
+  font-weight: $td-font-weight;
+  font-size: $td-font-size;
+  color: $td-color;
+  border-bottom: $td-border-bottom;
+}
+
+.evenTD {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+.evenTD:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+.patientTD {
+  padding-left: 0px;
+}
+
+/* Follow me template */
+.made-with-love {
+  margin-top: 40px;
+  padding: 10px;
+  clear: left;
+  text-align: center;
+  font-size: 10px;
+  font-family: arial;
+  color: $h1-color;
+}
+
+.made-with-love i {
+  font-style: normal;
+  color: #f50057;
+  font-size: 14px;
+  position: relative;
+  top: 2px;
+}
+
+.made-with-love a {
+  color: $h1-color;
+  text-decoration: none;
+}
+
+.made-with-love a:hover {
+  text-decoration: underline;
+}
+
+/* For custom scrollbar for webkit browser */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+::-webkit-scrollbar-thumb {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}

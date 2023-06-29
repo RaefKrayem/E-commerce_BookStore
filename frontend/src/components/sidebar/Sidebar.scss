@@ -1,0 +1,68 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+.container {
+  display: flex;
+  position: sticky;
+}
+main {
+  width: 100%;
+  padding: 20px;
+}
+.sidebar {
+  background: #fff;
+  color: #353535;
+  height: 80vh;
+  width: 200px;
+  position: fixed;
+  transition: all 0.25s;
+  height: 100vh;
+}
+.top_section {
+  display: flex;
+  align-items: center;
+  padding: 20px 15px;
+}
+.logo {
+  font-size: 20px;
+  color: #353535;
+}
+.bars {
+  display: flex;
+  font-size: 20px;
+  margin-left: 50px;
+}
+.link {
+  display: flex;
+  color: #353535;
+  padding: 15px 15px;
+  gap: 15px;
+  transition: all 0.25s;
+}
+.link:hover {
+  background: rgb(231, 190, 53);
+  color: #000;
+  transition: all 0.25s;
+}
+.active {
+  background: rgb(231, 190, 53);
+  color: #000;
+}
+.icon,
+.link_text {
+  font-size: 15px;
+}
+
+.logout-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 15px;
+  color: #353535;
+  padding: 15px 15px;
+  gap: 15px;
+  transition: all 0.25s;
+  width: 100%;
+}

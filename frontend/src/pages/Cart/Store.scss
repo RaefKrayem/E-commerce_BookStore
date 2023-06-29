@@ -1,0 +1,48 @@
+// make cards responsive
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 20px;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.cartHeading {
+  font-size: 2rem;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 15px;
+
+  @media screen and (max-width: 780px) {
+    font-size: 1.5rem;
+  }
+}
+
+// place order button at the bottom left of the page
+.place-order-btn {
+  display: block;
+  margin: 1rem auto;
+  width: 200px;
+  padding: 10px 0;
+  border: none;
+  border-radius: 5px;
+  background-color: #e7be35;
+  color: #353535;
+  font-size: 1.2rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+
+  &:hover {
+    background-color: #353535;
+    color: #e7be35;
+  }
+}
+
+@media screen and (max-width: 780px) {
+  .cards {
+    justify-content: center;
+  }
+}
